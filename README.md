@@ -1,4 +1,4 @@
-# Jawwy TV Data Analysis 
+# Jawwy TV Data Analysis
 
 Jawwy TV data analysis project covering viewer behavior, recommendation modeling, and viewership forecasting — completed as part of the **stc Data Analyst Virtual Experience**, in partnership with the **Misk Foundation**.
 
@@ -23,7 +23,8 @@ Working with **1M+ viewing records** from the Jawwy TV platform, this project un
 The project is split into four tasks, each addressing a distinct analytical objective.
 
 ### Task 1 — Interaction Data & Playback Quality
-**Notebook:** [`notebooks/Task1_Interaction_Data.ipynb`](notebooks/Task1_Interaction_Data.ipynb)
+
+**Notebook:** [`stc_TV_Task1.ipynb`](notebooks/stc_TV_Task1.ipynb)
 
 Analyzes viewing behavior across movies vs. series and playback quality (HD/SD), using 1,048,575 records with 13 fields including duration, HD flag, and genre.
 
@@ -32,7 +33,8 @@ Analyzes viewing behavior across movies vs. series and playback quality (HD/SD),
 - HD vs. SD playback share by program type
 
 ### Task 2 — Demand Forecasting
-**Notebook:** [`notebooks/Task2_Forecasting_SARIMA.ipynb`](notebooks/Task2_Forecasting_SARIMA.ipynb)
+
+**Notebook:** [`stc_TV_Task2.ipynb`](notebooks/stc_TV_Task2.ipynb)
 
 Builds a time-series forecasting model on 86 days of daily watch-hour totals (Jan–Apr 2018) to predict demand two months ahead.
 
@@ -41,7 +43,8 @@ Builds a time-series forecasting model on 86 days of daily watch-hour totals (Ja
 - 60-day forecast with confidence intervals
 
 ### Task 3 — Recommendation Engine
-**Notebook:** [`notebooks/Task3_Recommendation_Engine.ipynb`](notebooks/Task3_Recommendation_Engine.ipynb)
+
+**Notebook:** [`stc_TV_Task3.ipynb`](notebooks/stc_TV_Task3.ipynb)
 
 Builds a collaborative-filtering recommender using user ratings across 8,013 titles and 11,578 active users.
 
@@ -50,7 +53,8 @@ Builds a collaborative-filtering recommender using user ratings across 8,013 tit
 - Top-5 title recommendations for any given program
 
 ### Task 4 — Data Storytelling & Recommendations
-**Deliverable:** [`presentation/Jawwy_TV_Data_Story.pptx`](presentation/Jawwy_TV_Data_Story.pptx)
+
+**Deliverable:** [`Jawwy_TV_Data_Story.pptx`](presentation/Jawwy_TV_Data_Story.pptx)
 
 Translates the findings from Tasks 1–3 into a data story for a non-technical audience, with actionable recommendations for the product team.
 
@@ -99,55 +103,15 @@ Translates the findings from Tasks 1–3 into a data story for a non-technical a
 
 ## Repository Structure
 
-```
+```text
 Jawwy-TV-Data-Analysis/
 │
 ├── notebooks/
-│   ├── Task1_Interaction_Data.ipynb        # Viewing behavior & HD/SD analysis
-│   ├── Task2_Forecasting_SARIMA.ipynb      # Demand forecasting model
-│   └── Task3_Recommendation_Engine.ipynb   # Content recommendation engine
+│   ├── stc_TV_Task1.ipynb        # Viewing behavior & HD/SD analysis
+│   ├── stc_TV_Task2.ipynb        # Demand forecasting model
+│   └── stc_TV_Task3.ipynb        # Content recommendation engine
 │
 ├── presentation/
-│   └── Jawwy_TV_Data_Story.pptx            # Executive summary & recommendations
-│
-├── data/                                    # Not included (see note below)
+│   └── Jawwy_TV_Data_Story.pptx  # Executive summary & recommendations
 │
 └── README.md
-```
-
-> **Note on data:** The raw datasets (`stc_TV_Data_Set_T1.xlsb`, `_T2.xlsx`, `_T3.xlsx`) are not included in this repository due to size and licensing — they were provided as part of the stc Data Analyst Virtual Experience program. To run the notebooks, place the corresponding dataset file in the same directory as each notebook.
-
----
-
-## Getting Started
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/<your-username>/Jawwy-TV-Data-Analysis.git
-   cd Jawwy-TV-Data-Analysis
-   ```
-
-2. **Install dependencies**
-   ```bash
-   pip install pandas numpy pyxlsb plotly matplotlib statsmodels scikit-learn scipy jupyter
-   ```
-
-3. **Add the dataset files** to the `notebooks/` folder (see note above).
-
-4. **Run the notebooks**
-   ```bash
-   jupyter notebook notebooks/
-   ```
-
----
-
-## Presentation
-
-The full data story — including all charts, the forecasting model, and product recommendations — is available in [`presentation/Jawwy_TV_Data_Story.pptx`](presentation/Jawwy_TV_Data_Story.pptx).
-
----
-
-## Acknowledgments
-
-This project was completed as part of the **stc Data Analyst Virtual Experience**, offered in partnership with the **Misk Foundation**.
-
