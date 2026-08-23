@@ -1,10 +1,10 @@
-# Jawwy TV Data Analysis
+# Jawwy TV Viewership Data Analysis
 
-A data analysis project exploring viewer behavior, content engagement, demand forecasting, and content recommendations using Jawwy TV viewing data.
+A million viewing records reveal how users engage and where the platform can grow.
 
-Completed as part of the **stc Data Analyst Virtual Experience**, in partnership with the **Misk Foundation**.
+Completed as part of the **stc Data Analyst Virtual Experience** in partnership with the **Misk Foundation**.
 
-The project analyzes **1,048,575 viewing events** and delivers three analytical solutions: behavioral analysis, demand forecasting, and a content recommendation engine.
+The project analyzes **1,048,575 viewing events** and delivers three analytical solutions covering viewer behavior, demand forecasting, and content recommendations.
 
 ---
 
@@ -22,7 +22,7 @@ The project analyzes **1,048,575 viewing events** and delivers three analytical 
 
 ## Project Tasks
 
-### Task 1 — Interaction Data & Playback Quality
+### Task 1 — Viewer Behavior & Playback Quality
 
 **Notebook:** [`stc_TV_Task1.ipynb`](notebooks/stc_TV_Task1.ipynb)
 
@@ -31,7 +31,7 @@ Analyzes viewer behavior and playback quality across movies and series.
 Key analysis includes:
 
 - Most-watched titles and genres by total watch time
-- Movies vs. Series engagement
+- Movies vs. series engagement
 - HD vs. SD playback distribution
 - Viewer and content-level engagement patterns
 
@@ -50,7 +50,7 @@ Key analysis includes:
 - Model selection using AIC
 - 60-day demand forecast with confidence intervals
 
-**Best-performing model:**
+**Selected model:**
 
 `SARIMA(0,1,1) × (0,1,1,12)`
 
@@ -75,7 +75,7 @@ The model was tested using **8,013 titles** and **11,578 active users**.
 
 ### Task 4 — Data Storytelling & Recommendations
 
-**Presentation:** [`Jawwy_TV_Data_Story.pptx`](presentation/Jawwy_TV_Data_Story.pptx)
+**Presentation:** [`Jawwy_TV_Data_Story.pdf`](presentation/Jawwy_TV_Data_Story.pdf)
 
 Translates the analytical findings from Tasks 1–3 into an executive-level data story, highlighting key insights and actionable recommendations.
 
@@ -83,10 +83,10 @@ Translates the analytical findings from Tasks 1–3 into an executive-level data
 
 ## Key Findings
 
-| Finding | Result |
+| **Finding** | **Result** |
 |---|---|
-| **Declining engagement** | Daily watch hours decreased from **883 hrs/day** in January to **696 hrs/day** in April — approximately a **21% decline**. |
-| **Series engagement** | Series viewers generated **7.2×** more watch time per user than movie viewers (65.4 hrs vs. 9.1 hrs). |
+| **Declining engagement** | Daily watch hours decreased from **883 hrs/day** in January to **696 hrs/day** in April, approximately a **21% decline**. |
+| **Series engagement** | Series viewers generated **7.2×** more watch time per user than movie viewers, at 65.4 hrs vs. 9.1 hrs. |
 | **Animation dominance** | Animation represented **38%** of all viewing records, with *The Boss Baby* and *Moana* among the most-watched titles. |
 | **Playback quality gap** | Series viewing had a higher SD share (**56%**) compared with movies (**36%**). |
 | **Forecasting** | The selected SARIMA model was `SARIMA(0,1,1) × (0,1,1,12)`, with an AIC of **909.6**. |
@@ -115,7 +115,7 @@ Translates the analytical findings from Tasks 1–3 into an executive-level data
 
 ## Tech Stack
 
-| Library | Purpose |
+| **Library** | **Purpose** |
 |---|---|
 | `pandas`, `numpy` | Data wrangling and numerical computation |
 | `pyxlsb` | Reading `.xlsb` datasets |
@@ -131,11 +131,11 @@ Translates the analytical findings from Tasks 1–3 into an executive-level data
 Jawwy-TV-Data-Analysis/
 │
 ├── notebooks/
-│   ├── stc_TV_Task1.ipynb        # Viewing behavior & playback quality
-│   ├── stc_TV_Task2.ipynb        # Demand forecasting
-│   └── stc_TV_Task3.ipynb        # Content recommendation engine
+│   ├── stc_TV_Task1.ipynb
+│   ├── stc_TV_Task2.ipynb
+│   └── stc_TV_Task3.ipynb
 │
 ├── presentation/
-│   └── Jawwy_TV_Data_Story.pptx  # Executive summary & recommendations
+│   └── Jawwy_TV_Data_Story.pdf
 │
 └── README.md
